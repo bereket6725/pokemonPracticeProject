@@ -14,7 +14,7 @@
 		AB4CB1E71B6BFDB700CD7D18 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB4CB1E51B6BFDB700CD7D18 /* LaunchScreen.xib */; };
 		AB4CB1F31B6BFDB700CD7D18 /* pokemonPracticeProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4CB1F21B6BFDB700CD7D18 /* pokemonPracticeProjectTests.m */; };
 		AB4CB1FE1B6BFE0A00CD7D18 /* pokemonPracticeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4CB1FD1B6BFE0A00CD7D18 /* pokemonPracticeTableViewController.m */; };
-		ABE432751B6C3B81001BEACC /* assets in Resources */ = {isa = PBXBuildFile; fileRef = ABE432741B6C3B81001BEACC /* assets */; };
+		AB8BCAE41BC6E42500898E39 /* PokemonDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8BCAE31BC6E42500898E39 /* PokemonDetailViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,8 @@
 		AB4CB1F21B6BFDB700CD7D18 /* pokemonPracticeProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pokemonPracticeProjectTests.m; sourceTree = "<group>"; };
 		AB4CB1FC1B6BFE0A00CD7D18 /* pokemonPracticeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pokemonPracticeTableViewController.h; sourceTree = "<group>"; };
 		AB4CB1FD1B6BFE0A00CD7D18 /* pokemonPracticeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pokemonPracticeTableViewController.m; sourceTree = "<group>"; };
-		ABE432741B6C3B81001BEACC /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = "../../unit-1-hw-week-1/assets"; sourceTree = "<group>"; };
+		AB8BCAE21BC6E42500898E39 /* PokemonDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonDetailViewController.h; sourceTree = "<group>"; };
+		AB8BCAE31BC6E42500898E39 /* PokemonDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +88,10 @@
 				AB4CB1DB1B6BFDB700CD7D18 /* AppDelegate.m */,
 				AB4CB1FC1B6BFE0A00CD7D18 /* pokemonPracticeTableViewController.h */,
 				AB4CB1FD1B6BFE0A00CD7D18 /* pokemonPracticeTableViewController.m */,
+				AB8BCAE21BC6E42500898E39 /* PokemonDetailViewController.h */,
+				AB8BCAE31BC6E42500898E39 /* PokemonDetailViewController.m */,
 				AB4CB1E01B6BFDB700CD7D18 /* Main.storyboard */,
 				AB4CB1E31B6BFDB700CD7D18 /* Images.xcassets */,
-				ABE432741B6C3B81001BEACC /* assets */,
 				AB4CB1E51B6BFDB700CD7D18 /* LaunchScreen.xib */,
 				AB4CB1D61B6BFDB700CD7D18 /* Supporting Files */,
 			);
@@ -203,7 +205,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB4CB1E21B6BFDB700CD7D18 /* Main.storyboard in Resources */,
-				ABE432751B6C3B81001BEACC /* assets in Resources */,
 				AB4CB1E71B6BFDB700CD7D18 /* LaunchScreen.xib in Resources */,
 				AB4CB1E41B6BFDB700CD7D18 /* Images.xcassets in Resources */,
 			);
@@ -226,6 +227,7 @@
 				AB4CB1DC1B6BFDB700CD7D18 /* AppDelegate.m in Sources */,
 				AB4CB1D91B6BFDB700CD7D18 /* main.m in Sources */,
 				AB4CB1FE1B6BFE0A00CD7D18 /* pokemonPracticeTableViewController.m in Sources */,
+				AB8BCAE41BC6E42500898E39 /* PokemonDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

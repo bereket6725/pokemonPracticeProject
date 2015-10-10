@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TD9-BL-uCO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TD9-BL-uCO">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--Pokemon Practice Table View Controller-->
@@ -14,11 +15,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="carIdentifier" textLabel="TUh-DE-Byh" style="IBUITableViewCellStyleDefault" id="rtn-Th-eZt">
+                                <rect key="frame" x="0.0" y="86" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rtn-Th-eZt" id="w8W-6l-mNG">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TUh-DE-Byh">
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -39,7 +43,7 @@
                     <navigationItem key="navigationItem" id="Hq0-1b-UJ0">
                         <nil key="title"/>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="hwT-Wg-Msl">
-                            <rect key="frame" x="16" y="7" width="568" height="30"/>
+                            <rect key="frame" x="20" y="7" width="560" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="A-Z"/>
@@ -58,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="791" y="-108"/>
         </scene>
-        <!--View Controller-->
+        <!--Pokemon Detail View Controller-->
         <scene sceneID="uZ4-7t-M7Q">
             <objects>
-                <viewController id="V6v-xu-mdH" sceneMemberID="viewController">
+                <viewController id="V6v-xu-mdH" customClass="PokemonDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BvR-E4-MJO"/>
                         <viewControllerLayoutGuide type="bottom" id="iyN-jr-CLU"/>
@@ -78,7 +82,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokemon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUy-Ga-hjP">
-                                <rect key="frame" x="264" y="459" width="73" height="21"/>
+                                <rect key="frame" x="264" y="459" width="72" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -92,6 +96,10 @@
                             <constraint firstItem="iyN-jr-CLU" firstAttribute="top" secondItem="tUy-Ga-hjP" secondAttribute="bottom" constant="120" id="zHu-Ep-JLg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pokemonImageView" destination="q7M-Qb-gfw" id="Vb7-u6-VcP"/>
+                        <outlet property="pokemonNameLabel" destination="tUy-Ga-hjP" id="VNB-bR-o73"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PH2-5z-joF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

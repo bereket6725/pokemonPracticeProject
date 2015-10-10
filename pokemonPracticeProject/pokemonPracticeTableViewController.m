@@ -7,7 +7,7 @@
 //
 
 #import "pokemonPracticeTableViewController.h"
-
+#import "PokemonDetailViewController.h"
 @interface pokemonPracticeTableViewController ()
 @property (nonatomic) NSDictionary *pokemon;
 
@@ -268,7 +268,7 @@
     
     
     cell.textLabel.text=pokemonName;
-    cell.imageView.image = [UIImage imageNamed:pokemonName];
+    cell.imageView.image = [UIImage imageNamed:[pokemonName lowercaseString]];
         // Configure the cell...
     
     return cell;
@@ -317,14 +317,25 @@
  }
  */
 
-/*
+
  #pragma mark - Navigation
  
- // In a storyboard-based application, you will often want to do a little preparation before navigation
+
  - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
+     PokemonDetailViewController* viewController = segue.destinationViewController;
+     NSIndexPath* indexPath = [self.tableView indexPathForSelectedRow];
+     
+     NSArray *keys= [self.pokemon allKeys];
+     NSString *key=keys[indexPath.section];
+     NSArray *arrayOfPokemonNames=[self.pokemon objectForKey:key];
+     NSString *pokemonName= [arrayOfPokemonNames objectAtIndex:indexPath.row];
+     
+     viewController.pokemonName = [pokemonName lowercaseString];
+    
+     
+     
+  
  }
- */
+
 
 @end
